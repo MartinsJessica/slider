@@ -61,6 +61,35 @@ body {
     background-color: #20a6ff;
 }
 
+.btn-prev, .btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+
 #radio1:checked ~.first {
     margin-left: 0;
 }
