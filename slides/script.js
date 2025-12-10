@@ -12,5 +12,16 @@ function nextImage(){
     }
 
     document.getElementById("radio"+count).checked = true;
-    
+
 }
+
+function prevImage() {
+    count--;
+    if (count < 1) {
+        count = 4;
+    }
+    document.getElementById("radio" + count).checked = true;
+}
+
+document.querySelector(".btn-next").addEventListener("click", nextImage);
+document.querySelector(".btn-prev").addEventListener("click", prevImage);
